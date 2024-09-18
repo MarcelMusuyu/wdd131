@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-color: #012a4a;
+  --secondary-color: #013a63;
+  --accent1-color: #01497c;
+  --accent2-color: #014f86;
+
+  --heading-font: "Roboto", serif;
+  --paragraph-font: "Roboto Flex", serif;
+
+  --nav-backgroud-color: var(--primary-color);
+  --nav-link-color: #ffffff;
+  --nav-hover-link-color: var(--nav-link-color);
+  --nav-hover-background-color: var(--accent2-color);
+}
 * {
   margin: 0;
   padding: 0;
