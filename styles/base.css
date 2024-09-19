@@ -56,13 +56,21 @@ header {
   color: #eee;
 }
 em {
-  color: darkgoldenrod;
+  color: rgb(224, 193, 15);
   font-weight: 300;
 }
 header nav {
   margin-top: 2rem;
   width: 101%;
   background-color: var(--secondary-color);
+}
+
+header nav a:hover {
+  color: darkgoldenrod;
+  background-color: var(--primary-color);
+  font-style: italic;
+  transform: scale(1.5);
+  text-decoration: underline;
 }
 
 .navigation {
@@ -99,9 +107,8 @@ header nav {
 }
 
 footer {
-  background-color: var(--secondary-color);
-
-  color: #eee;
+  background-color: var(--primary-color);
+  color: #ffffff;
 }
 
 body header {
