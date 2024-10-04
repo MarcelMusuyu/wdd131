@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nyembo Musuyu | WDD 131.</title>
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals, Picture Album"
+    />
+    <meta name="author" content="Marcel Nyembo" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-large.css" />
+    <script src="scripts/place.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Democratic Republic of Congo</h1>
+    </header>
+    <main>
+      <div class="hero">
+        <picture>
+          <source
+            srcset="images/crgrandbois-7316200.webp"
+            media="(max-width: 640px)"
+          />
+          <img
+            src="images/dauphin-large.webp"
+            alt="Dauphin in Water"
+            width="1000"
+            height="auto"
+          />
+        </picture>
+        <section class="Data">
+          <h3>Data</h3>
+          <p>Area: <span class="value">2,345,410 sq km</span></p>
+          <p>Population: <span class="value">98 600,000</span></p>
+          <p>Capital: <span class="value">Kinshasa</span></p>
+          <p>
+            Languages:
+            <span class="value"
+              >French, Lingala, Kikongo, Swahili, Tshiluba</span
+            >
+          </p>
+          <p>Currency: <span class="value">Congolese franc (CDF)</span></p>
+          <p>Time Zone: <span class="value">UTC+2</span></p>
+          <p>Caling Code: <span class="value">+243</span></p>
+          <p>Internet TLD: <span class="value">.cd</span></p>
+        </section>
+        <section class="Weather">
+          <h3 id="weather">Weather</h3>
+          <p>
+            Temperature:
+            <span id="temperature" class="value"></span>
+          </p>
+          <p>Conditions: <span class="value">Party Cloudy</span></p>
+          <p>Wind: <span id="wind" class="value"></span></p>
+          <p>Wind Chill: <span id="windchill" class="value"></span></p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>
+        ©️<span id="currentyear"></span>🌴 Nyembo Musuyu Marcel 🌴 Lubumbashi,
+        Republic Democratic Of Congo
+      </p>
+      <p><em id="last"></em></p>
+    </footer>
+  </body>
+</html>
