@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nyembo Musuyu | WDD 131.</title>
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals, Picture Album"
+    />
+    <meta name="author" content="Marcel Nyembo" />
+    <link rel="stylesheet" href="styles/table-practice.css" />
+    <!-- <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-large.css" />
+    <script src="scripts/place.js" defer></script> -->
+  </head>
+
+  <body>
+    <header>
+      <h1>Table</h1>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="4">New Items</th>
+          </tr>
+          <tr>
+            <th id="clothes">Clothes</th>
+
+            <th id="trousers" headers="clothes">Trousers</th>
+            <th id="skirts" headers="clothes">Skirts</th>
+            <th id="dresses" headers="clothes">Dresses</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- <th id="belgium" scope="row">Belgium</th> -->
+            <th id="antwerp" rowspan="4" scope="rowgroup" headers="belgium">
+              Antwerp
+            </th>
+            <td headers="antwerp belgium clothes trousers">56</td>
+            <td headers="antwerp belgium clothes skirts">22</td>
+            <td headers="antwerp belgium clothes dresses">43</td>
+          </tr>
+          <tr>
+            <!-- <th id="belgium" scope="row">Belgium</th> -->
+
+            <td headers="antwerp belgium clothes trousers">57</td>
+            <td headers="antwerp belgium clothes skirts">22</td>
+            <td headers="antwerp belgium clothes dresses">43</td>
+          </tr>
+          <tr>
+            <!-- <th id="belgium" scope="row">Belgium</th> -->
+
+            <td headers="antwerp belgium clothes trousers">36</td>
+            <td headers="antwerp belgium clothes skirts">22</td>
+            <td headers="antwerp belgium clothes dresses">43</td>
+          </tr>
+          <tr>
+            <!-- <th id="belgium" scope="row">Belgium</th> -->
+
+            <td headers="antwerp belgium clothes trousers">43</td>
+            <td headers="antwerp belgium clothes skirts">22</td>
+            <td headers="antwerp belgium clothes dresses">43</td>
+          </tr>
+          <tr>
+            <!-- <th id="belgium" scope="row">Belgium</th> -->
+            <th id="antwerp" scope="row" headers="belgium">Bag</th>
+            <td headers="antwerp belgium clothes trousers">56</td>
+            <td headers="antwerp belgium clothes skirts">22</td>
+            <td headers="antwerp belgium clothes dresses">43</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <p>
+        ©️<span id="currentyear"></span>🌴 Nyembo Musuyu Marcel 🌴 Lubumbashi,
+        Republic Democratic Of Congo
+      </p>
+      <p><em id="last"></em></p>
+    </footer>
+  </body>
+</html>
