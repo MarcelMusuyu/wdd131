@@ -19,14 +19,14 @@ button.addEventListener("click", () => {
     li.textContent = myItem === "" ? "Helaman 5:2" : myItem;
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "❌";
+
+    deleteButton.addEventListener("click", () => {
+      list.removeChild(li);
+    });
     li.appendChild(deleteButton);
 
     list.appendChild(li);
   }
-
-  deleteButton.addEventListener("click", () => {
-    list.removeChild(li);
-  });
 
   input.focus();
 });

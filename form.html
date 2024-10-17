@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review | WDD 131.</title>
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals, Picture Album"
+    />
+    <meta name="author" content="Marcel Nyembo" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/form-larger.css" />
+    <script src="scripts/form.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Product Review</h1>
+    </header>
+    <main>
+      <form method="get" action="review.html" id="product-review-form">
+        <div class="form-group1 content">
+          <label for="product">Product Name:</label>
+          <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product...</option>
+          </select>
+        </div>
+
+        <div class="stars content">
+          <p>Overall Rating:</p>
+          <div class="rating">
+            <div class="form-group">
+              <label for="onestar">⭐ </label>
+              <input
+                type="radio"
+                id="onestar"
+                name="stars"
+                value="5"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="twostars">⭐⭐ </label>
+              <input
+                type="radio"
+                id="twostars"
+                name="stars"
+                value="5"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="threestars">⭐⭐⭐ </label>
+              <input
+                type="radio"
+                id="threestars"
+                name="stars"
+                value="5"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="fourstars">⭐⭐⭐⭐ </label>
+
+              <input
+                type="radio"
+                id="fourstars"
+                name="stars"
+                value="5"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="fivestars">⭐⭐⭐⭐⭐ </label>
+              <input
+                type="radio"
+                id="fivestars"
+                name="stars"
+                value="5"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-group1 content">
+          <label for="date">Date of installation:</label>
+          <input id="date" name="date" required type="date" />
+        </div>
+        <div class="features content">
+          <p>
+            Which features did you find useful in the product? <br />(Check all
+            that apply)
+          </p>
+          <div>
+            <input
+              type="checkbox"
+              value="Durability"
+              id="durability"
+              name="durability"
+            />
+            <label for="durability">Durability</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              value="Ease of Use"
+              id="ease-of-use"
+              name="ease-of-use"
+            />
+            <label for="ease-of-use">Ease of Use</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              value="Performance"
+              id="performance"
+              name="performance"
+            />
+            <label for="performance">Performance</label>
+          </div>
+          <div>
+            <input type="checkbox" value="Design" id="design" name="design" />
+            <label for="design">Design</label>
+          </div>
+        </div>
+        <div class="form-group1 content">
+          <label for="description"
+            >Written Review <em class="optional">(Optional)</em></label
+          >
+          <textarea rows="6" id="description" name="description"></textarea>
+        </div>
+        <div class="form-group1 content">
+          <label for="name"
+            >Your Name <em class="optional">(Optional)</em></label
+          >
+          <input id="name" name="name" type="text" />
+        </div>
+        <div class="content">
+          <input id="send" value="Submit" name="send" type="submit" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>
+        ©️<span id="currentyear"></span>🌴 Nyembo Musuyu Marcel 🌴 Lubumbashi,
+        Republic Democratic Of Congo
+      </p>
+      <p><em id="last"></em></p>
+    </footer>
+  </body>
+</html>
